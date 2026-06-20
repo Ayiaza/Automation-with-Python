@@ -1,0 +1,20 @@
+import os
+
+def create_daily_logs():
+    folder_name = input("Enter a name for your new folder: ")
+    if not os.path.exists(folder_name):
+        os.makedirs(folder_name)
+        print(f"Created folder: {folder_name}")   
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]   
+    for day in days:
+        file_path = os.path.join(folder_name, f"{day}.txt")
+        user_notes = input(f"Enter your main task for {day}: ")       
+        with open(file_path, "w") as file:
+            file.write(f"--- Notes for {day} ---\n\n")
+            file.write("Tasks to complete:\n")
+            file.write(f"- {user_notes}\n")    
+        print(f"Saved and created file: {day}.txt\n")
+    print("Success! All files created automatically with your custom data.")
+
+if __name__ == "__main__":
+    create_daily_logs()
