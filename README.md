@@ -48,4 +48,4 @@ This Python script automates the creation of a personalized weekly log folder â€
 
 This project demonstrates how even a short Python script can automate repetitive tasks and produce real, usable output. It's a solid foundation for anyone learning Python who wants to go beyond theory and build something practical.
 ## Run the Project <br>
-
+https://github.com/user-attachments/assets/407f62a6-ce2a-473f-b736-c3dece77c3c5
